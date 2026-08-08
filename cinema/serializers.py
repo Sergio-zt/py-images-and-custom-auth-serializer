@@ -32,6 +32,7 @@ class CinemaHallSerializer(serializers.ModelSerializer):
 
 class MovieImageSerializer(serializers.ModelSerializer):
     image = serializers.ImageField()
+    
     class Meta:
         model = Movie
         fields = ("id", "image")
